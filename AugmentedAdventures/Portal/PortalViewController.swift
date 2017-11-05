@@ -5,6 +5,7 @@
 //  Created by Christopher Webb-Orenstein on 10/31/17.
 //  Copyright © 2017 Christopher Webb-Orenstein. All rights reserved.
 //
+// Adapted From: https://github.com/bjarnel/arkit-portal
 
 import ARKit
 import SceneKit
