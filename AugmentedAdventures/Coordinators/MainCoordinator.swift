@@ -39,9 +39,8 @@ extension MainCoordinator: ControllerCoordinatorDelegate {
         childCoordinators.removeAll()
         
         switch type {
-
-        case .start:
             
+        case .start:
             let startCoordinator = StartControllerCoordinator(window: window)
             addChildCoordinator(startCoordinator)
             startCoordinator.delegate = self
@@ -66,6 +65,12 @@ extension MainCoordinator: ControllerCoordinatorDelegate {
             airportCoordinator.delegate = self
             airportCoordinator.type = .airport
             airportCoordinator.start()
+        case .gremlins:
+            let gremlinsCoordinator = GremlinsControllerCoordinator(window: window)
+            addChildCoordinator(gremlinsCoordinator)
+            gremlinsCoordinator.delegate = self
+            gremlinsCoordinator.type = .gremlins
+            gremlinsCoordinator.start()
         }
     }
 }

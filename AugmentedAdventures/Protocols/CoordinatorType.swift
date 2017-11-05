@@ -9,6 +9,6 @@
 import Foundation
 
 enum CoordinatorType {
-    case start, app, portal, airport
+    case start, app, portal, airport, gremlins
 }
 

@@ -55,4 +55,8 @@ extension StartControllerCoordinator: StartViewControllerDelegate {
     func navigateToAirport() {
         delegate?.transitionCoordinator(type: .airport)
     }
+    
+    func navigateToGremlins() {
+        delegate?.transitionCoordinator(type: .gremlins)
+    }
 }

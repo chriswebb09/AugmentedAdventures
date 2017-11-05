@@ -9,7 +9,7 @@
 import Foundation
 
 enum  ControllerType {
-    case start, remoteControl, portal, airport
+    case start, remoteControl, portal, airport, gremlins
 }
 
 

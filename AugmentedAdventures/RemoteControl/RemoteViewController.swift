@@ -24,7 +24,6 @@ class RemoteViewController: UIViewController, Controller {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
         sceneView.delegate = self
-        sceneView.session.delegate = self
         sceneView.showsStatistics = true
         sceneView.setupDrone()
         gameController = GameController()
@@ -57,14 +56,6 @@ extension RemoteViewController: ARSCNViewDelegate {
     }
 }
 
-extension RemoteViewController: ARSessionDelegate {
-    
-    // MARK: - ARSessionDelegate
-    
-    public func session(_ session: ARSession, didUpdate frame: ARFrame) {
-    }
-}
-
 extension RemoteViewController: GameControllerDelegate {
     
     func updateDroneData(data: DroneData) {
@@ -75,7 +66,7 @@ extension RemoteViewController: GameControllerDelegate {
     }
     
     func changeAltitude(altitude: Float) {
-        var altChange = altitude / 4
+        let altChange = altitude / 4
         sceneView.changeAltitude(value: altChange)
     }
 }

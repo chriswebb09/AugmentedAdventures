@@ -28,4 +28,7 @@ class StartViewController: UIViewController, Controller {
         delegate?.navigateToAirport()
     }
     
+    @IBAction func navigateToGremlins(_ sender: Any) {
+        delegate?.navigateToGremlins()
+    }
 }

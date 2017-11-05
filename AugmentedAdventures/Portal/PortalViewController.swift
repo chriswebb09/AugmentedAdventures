@@ -65,15 +65,21 @@ extension PortalViewController: ARSCNViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = .horizontal
-        configuration.isLightEstimationEnabled = true
-        sceneView.session.run(configuration)
+        runSession()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         sceneView.session.pause()
+    }
+    
+    func runSession() {
+        sceneView.delegate = self
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = .horizontal
+        configuration.worldAlignment = .gravityAndHeading
+        configuration.isLightEstimationEnabled = true
+        sceneView.session.run(configuration)
     }
     
     @objc func didTap(_ sender:UITapGestureRecognizer) {

@@ -12,5 +12,6 @@ protocol StartViewControllerDelegate: class {
     func navigateToRemote()
     func navigateToPortal()
     func navigateToAirport()
+    func navigateToGremlins()
 }
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71C4D9F1FAFB1E40096B51F /* CollisionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C4D9E1FAFB1E40096B51F /* CollisionTypes.swift */; };
+		A71C4DA11FAFB1F90096B51F /* BodyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C4DA01FAFB1F90096B51F /* BodyType.swift */; };
+		A71C4DA31FAFB21E0096B51F /* ARState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C4DA21FAFB21E0096B51F /* ARState.swift */; };
+		A71C4DA51FAFB2410096B51F /* NodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C4DA41FAFB2410096B51F /* NodeGenerator.swift */; };
 		A727D7FD1FA890DA0075CA6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727D7FC1FA890DA0075CA6E /* AppDelegate.swift */; };
 		A727D7FF1FA890DA0075CA6E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A727D7FE1FA890DA0075CA6E /* art.scnassets */; };
 		A727D8011FA890DA0075CA6E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A727D8001FA890DA0075CA6E /* StartViewController.swift */; };
@@ -72,6 +76,10 @@
 		A7A5283D1FA906080093AF53 /* Portal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5283C1FA906080093AF53 /* Portal.swift */; };
 		A7A5283F1FA909A50093AF53 /* Media.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A5283E1FA909A50093AF53 /* Media.scnassets */; };
 		A7A528411FA90A150093AF53 /* PortalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A528401FA90A150093AF53 /* PortalCoordinator.swift */; };
+		A7BB28F21FAF4718002B2072 /* GremlinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB28F11FAF4718002B2072 /* GremlinsViewController.swift */; };
+		A7BB28F41FAF472F002B2072 /* GremlinsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB28F31FAF472F002B2072 /* GremlinsCoordinator.swift */; };
+		A7BB28F71FAF4769002B2072 /* GremlinsSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB28F61FAF4769002B2072 /* GremlinsSceneView.swift */; };
+		A7BB28F91FAF4779002B2072 /* Gremlins.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BB28F81FAF4779002B2072 /* Gremlins.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +100,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A71C4D9E1FAFB1E40096B51F /* CollisionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionTypes.swift; sourceTree = "<group>"; };
+		A71C4DA01FAFB1F90096B51F /* BodyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyType.swift; sourceTree = "<group>"; };
+		A71C4DA21FAFB21E0096B51F /* ARState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARState.swift; sourceTree = "<group>"; };
+		A71C4DA41FAFB2410096B51F /* NodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeGenerator.swift; sourceTree = "<group>"; };
 		A727D7F91FA890DA0075CA6E /* AugmentedAdventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedAdventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A727D7FC1FA890DA0075CA6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A727D7FE1FA890DA0075CA6E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -163,6 +175,10 @@
 		A7A5283C1FA906080093AF53 /* Portal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portal.swift; sourceTree = "<group>"; };
 		A7A5283E1FA909A50093AF53 /* Media.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Media.scnassets; sourceTree = "<group>"; };
 		A7A528401FA90A150093AF53 /* PortalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalCoordinator.swift; sourceTree = "<group>"; };
+		A7BB28F11FAF4718002B2072 /* GremlinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GremlinsViewController.swift; sourceTree = "<group>"; };
+		A7BB28F31FAF472F002B2072 /* GremlinsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GremlinsCoordinator.swift; sourceTree = "<group>"; };
+		A7BB28F61FAF4769002B2072 /* GremlinsSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GremlinsSceneView.swift; sourceTree = "<group>"; };
+		A7BB28F81FAF4779002B2072 /* Gremlins.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gremlins.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +231,7 @@
 			children = (
 				A727D7FC1FA890DA0075CA6E /* AppDelegate.swift */,
 				A727D7FE1FA890DA0075CA6E /* art.scnassets */,
+				A7BB28F51FAF4734002B2072 /* Gremlins */,
 				A76BAE701FAF2FDE0049569C /* Airport */,
 				A7A5283B1FA905E60093AF53 /* Portal */,
 				A7930BBA1FA8AEFA0055C37A /* Start */,
@@ -316,6 +333,10 @@
 				A76BAE6B1FAF2FD80049569C /* AirportCoordinator.swift */,
 				A76BAE681FAF2FD80049569C /* AirportSceneView.swift */,
 				A76BAE6A1FAF2FD80049569C /* AirportViewController.swift */,
+				A71C4DA41FAFB2410096B51F /* NodeGenerator.swift */,
+				A71C4DA21FAFB21E0096B51F /* ARState.swift */,
+				A71C4DA01FAFB1F90096B51F /* BodyType.swift */,
+				A71C4D9E1FAFB1E40096B51F /* CollisionTypes.swift */,
 			);
 			path = Airport;
 			sourceTree = "<group>";
@@ -377,6 +398,17 @@
 				A7A528401FA90A150093AF53 /* PortalCoordinator.swift */,
 			);
 			path = Portal;
+			sourceTree = "<group>";
+		};
+		A7BB28F51FAF4734002B2072 /* Gremlins */ = {
+			isa = PBXGroup;
+			children = (
+				A7BB28F11FAF4718002B2072 /* GremlinsViewController.swift */,
+				A7BB28F31FAF472F002B2072 /* GremlinsCoordinator.swift */,
+				A7BB28F61FAF4769002B2072 /* GremlinsSceneView.swift */,
+				A7BB28F81FAF4779002B2072 /* Gremlins.storyboard */,
+			);
+			path = Gremlins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,6 +525,7 @@
 				A76BAE6D1FAF2FD80049569C /* Airport.storyboard in Resources */,
 				A79B8BA01FA8C07800DF62F4 /* Models.scnassets in Resources */,
 				A727D8511FA895EE0075CA6E /* dpad.png in Resources */,
+				A7BB28F91FAF4779002B2072 /* Gremlins.storyboard in Resources */,
 				A727D8091FA890DA0075CA6E /* LaunchScreen.storyboard in Resources */,
 				A727D8061FA890DA0075CA6E /* Assets.xcassets in Resources */,
 				A727D8041FA890DA0075CA6E /* Start.storyboard in Resources */,
@@ -521,7 +554,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76BAE4D1FAF1BD30049569C /* GameControllerDelegate.swift in Sources */,
+				A71C4DA11FAFB1F90096B51F /* BodyType.swift in Sources */,
 				A7A528411FA90A150093AF53 /* PortalCoordinator.swift in Sources */,
+				A71C4D9F1FAFB1E40096B51F /* CollisionTypes.swift in Sources */,
 				A73CB2F61FA8B1A800D76A72 /* RemoteViewController.swift in Sources */,
 				A727D8311FA8914E0075CA6E /* Coordinator.swift in Sources */,
 				A75A35811FA8AD080099AD02 /*  SCNNode+Utilties.swift in Sources */,
@@ -529,6 +564,7 @@
 				A76BAE6E1FAF2FD80049569C /* AirportViewController.swift in Sources */,
 				A7A5283D1FA906080093AF53 /* Portal.swift in Sources */,
 				A75A357F1FA8ACE40099AD02 /* SCNVector3+Utilities.swift in Sources */,
+				A71C4DA51FAFB2410096B51F /* NodeGenerator.swift in Sources */,
 				A727D84B1FA895720075CA6E /* PadOverlay.swift in Sources */,
 				A72A0DF71FAEF3B200C209C4 /* Overlay.swift in Sources */,
 				A727D8011FA890DA0075CA6E /* StartViewController.swift in Sources */,
@@ -560,6 +596,7 @@
 				A75A35791FA8A3310099AD02 /* StartCoordinator.swift in Sources */,
 				A727D83B1FA891A40075CA6E /* MainCoordinator.swift in Sources */,
 				A72A30101FAE8854006E317A /* PhysicsBodyType.swift in Sources */,
+				A7BB28F21FAF4718002B2072 /* GremlinsViewController.swift in Sources */,
 				A76BAE6C1FAF2FD80049569C /* AirportSceneView.swift in Sources */,
 				A727D83F1FA8924D0075CA6E /* ControllerCoordinatorDelegate.swift in Sources */,
 				A727D84D1FA895930075CA6E /* ControlOverlay.swift in Sources */,
@@ -571,7 +608,10 @@
 				A727D83D1FA892130075CA6E /* ControllerCoordinator.swift in Sources */,
 				A727D8411FA892920075CA6E /* ControllerType.swift in Sources */,
 				A727D8391FA8918A0075CA6E /* Controller.swift in Sources */,
+				A71C4DA31FAFB21E0096B51F /* ARState.swift in Sources */,
+				A7BB28F71FAF4769002B2072 /* GremlinsSceneView.swift in Sources */,
 				A72A0DF51FAEEE6100C209C4 /* DroneSceneView.swift in Sources */,
+				A7BB28F41FAF472F002B2072 /* GremlinsCoordinator.swift in Sources */,
 				A76BAE4B1FAF1B9F0049569C /* ButtonOverlayDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,5 +27,28 @@ extension SCNNode {
             child.renderOnTop()
         }
     }
+    
+    func rotateObject(degreesHorizontal: CGFloat, degreesVertical: CGFloat) {
+        let rotateAction1 = SCNAction.rotateBy(x: 0, y: CGFloat(degreesVertical.toRadians), z: CGFloat(degreesHorizontal.toRadians), duration: 0.01)
+        self.runAction(SCNAction.sequence([rotateAction1]))
+    }
+    
+    
+    
+    func moveForward(by meters: Float) {
+        position = SCNVector3(position.x, position.y, position.z - meters)
+    }
+    
+    func pitchUp(by degree: Float) {
+        eulerAngles.x = degree
+    }
+    
+    func increaseAltitude(by meters: Float) {
+        position = SCNVector3(position.x, position.y + meters, position.z)
+    }
+    
 }
 
+func nodeWithModelName(_ modelName: String) -> SCNNode {
+    return SCNScene(named: modelName)!.rootNode.clone()
+}
