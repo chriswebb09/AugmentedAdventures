@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Portal View Controller-->
+        <scene sceneID="2pI-ts-EZ1">
+            <objects>
+                <viewController storyboardIdentifier="PortalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ycf-Ka-h07" customClass="PortalViewController" customModule="AugmentedAdventures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X75-aT-rYS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLl-Cv-c6e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO0-yl-erI">
+                                <rect key="frame" x="0.0" y="52" width="375" height="66.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mO0-yl-erI" firstAttribute="width" secondItem="nLl-Cv-c6e" secondAttribute="width" id="32O-dD-bXC"/>
+                            <constraint firstItem="nLl-Cv-c6e" firstAttribute="bottom" secondItem="Iho-JF-jLm" secondAttribute="bottom" id="MJP-jb-bS5"/>
+                            <constraint firstItem="mO0-yl-erI" firstAttribute="leading" secondItem="nLl-Cv-c6e" secondAttribute="leading" id="Ovd-9F-hTO"/>
+                            <constraint firstItem="mO0-yl-erI" firstAttribute="top" secondItem="Iho-JF-jLm" secondAttribute="top" constant="32" id="WJu-a7-BCy"/>
+                            <constraint firstItem="nLl-Cv-c6e" firstAttribute="top" secondItem="X75-aT-rYS" secondAttribute="top" id="XL1-Je-CcE"/>
+                            <constraint firstItem="mO0-yl-erI" firstAttribute="height" secondItem="nLl-Cv-c6e" secondAttribute="height" multiplier="0.1" id="XN2-xi-sgx"/>
+                            <constraint firstItem="nLl-Cv-c6e" firstAttribute="leading" secondItem="X75-aT-rYS" secondAttribute="leading" id="m9d-0i-osn"/>
+                            <constraint firstAttribute="trailing" secondItem="nLl-Cv-c6e" secondAttribute="trailing" id="qA4-xe-uE5"/>
+                            <constraint firstItem="mO0-yl-erI" firstAttribute="centerX" secondItem="nLl-Cv-c6e" secondAttribute="centerX" id="tb4-ic-j5c"/>
+                            <constraint firstItem="mO0-yl-erI" firstAttribute="trailing" secondItem="nLl-Cv-c6e" secondAttribute="trailing" id="yt5-2S-ELI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iho-JF-jLm"/>
+                    </view>
+                    <connections>
+                        <outlet property="planeSearchLabel" destination="mO0-yl-erI" id="M6l-YJ-baW"/>
+                        <outlet property="sceneView" destination="nLl-Cv-c6e" id="Z4W-zu-4AJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqm-aM-MVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-74.212893553223395"/>
+        </scene>
+    </scenes>
+</document>

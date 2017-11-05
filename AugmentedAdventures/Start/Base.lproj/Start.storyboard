@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BV1-FR-VrT" customClass="StartViewController" customModule="AugmentedAdventures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gdn-RL-GfM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rd-I9-6AJ">
+                                <rect key="frame" x="0.0" y="221" width="375" height="66.5"/>
+                                <color key="backgroundColor" red="0.056133200952718232" green="0.53393059748446636" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go To Portal">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToPortal:" destination="BV1-FR-VrT" eventType="touchUpInside" id="QEB-RP-x3s"/>
+                                    <action selector="navigateToRemote:" destination="BV1-FR-VrT" eventType="touchUpInside" id="apV-oB-pKw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwm-f8-3yj">
+                                <rect key="frame" x="0.0" y="394.5" width="375" height="66.5"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go To Remote Control Airplane">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToRemote:" destination="BV1-FR-VrT" eventType="touchUpInside" id="iLL-1h-uEj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rbs-ZZ-1ys" firstAttribute="trailing" secondItem="zwm-f8-3yj" secondAttribute="trailing" id="1dR-52-nLz"/>
+                            <constraint firstItem="2rd-I9-6AJ" firstAttribute="width" secondItem="Gdn-RL-GfM" secondAttribute="width" id="3CJ-80-bZ4"/>
+                            <constraint firstItem="2rd-I9-6AJ" firstAttribute="top" secondItem="Rbs-ZZ-1ys" secondAttribute="top" constant="201" id="4Hv-IM-uZt"/>
+                            <constraint firstItem="2rd-I9-6AJ" firstAttribute="height" secondItem="Gdn-RL-GfM" secondAttribute="height" multiplier="0.1" id="aVL-Zx-0eO"/>
+                            <constraint firstItem="Rbs-ZZ-1ys" firstAttribute="bottom" secondItem="zwm-f8-3yj" secondAttribute="bottom" constant="206" id="cWG-IT-fAp"/>
+                            <constraint firstItem="zwm-f8-3yj" firstAttribute="height" secondItem="Gdn-RL-GfM" secondAttribute="height" multiplier="0.1" id="lXH-yV-Ppq"/>
+                            <constraint firstItem="zwm-f8-3yj" firstAttribute="leading" secondItem="Rbs-ZZ-1ys" secondAttribute="leading" id="orL-4d-7jf"/>
+                            <constraint firstItem="2rd-I9-6AJ" firstAttribute="trailing" secondItem="Rbs-ZZ-1ys" secondAttribute="trailing" id="uP1-kC-vdD"/>
+                            <constraint firstItem="2rd-I9-6AJ" firstAttribute="leading" secondItem="Rbs-ZZ-1ys" secondAttribute="leading" id="zF9-5S-lgF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rbs-ZZ-1ys"/>
+                    </view>
+                    <connections>
+                        <outlet property="startView" destination="Gdn-RL-GfM" id="Rms-Gb-rvd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>
