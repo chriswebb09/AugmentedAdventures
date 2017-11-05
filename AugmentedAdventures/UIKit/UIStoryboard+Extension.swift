@@ -15,7 +15,7 @@ extension UIStoryboard {
     // Enumeration of all storyboard names used in the app
     
     enum Storyboard: String {
-        case start, remoteControl, portal
+        case start, remoteControl, portal, airport
         
         // The name of the storyboard's file, returned with capitalization applied
         

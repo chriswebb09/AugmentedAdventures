@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rd-I9-6AJ">
-                                <rect key="frame" x="0.0" y="221" width="375" height="66.5"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="66.5"/>
                                 <color key="backgroundColor" red="0.056133200952718232" green="0.53393059748446636" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Go To Portal">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwm-f8-3yj">
-                                <rect key="frame" x="0.0" y="394.5" width="375" height="66.5"/>
+                                <rect key="frame" x="0.0" y="540" width="375" height="66.5"/>
                                 <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Go To Remote Control Airplane">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -40,16 +40,30 @@
                                     <action selector="navigateToRemote:" destination="BV1-FR-VrT" eventType="touchUpInside" id="iLL-1h-uEj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9N-ro-2OU">
+                                <rect key="frame" x="0.0" y="310" width="375" height="67"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Go To Airport">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToAirport:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0at-re-rIy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Rbs-ZZ-1ys" firstAttribute="trailing" secondItem="zwm-f8-3yj" secondAttribute="trailing" id="1dR-52-nLz"/>
                             <constraint firstItem="2rd-I9-6AJ" firstAttribute="width" secondItem="Gdn-RL-GfM" secondAttribute="width" id="3CJ-80-bZ4"/>
-                            <constraint firstItem="2rd-I9-6AJ" firstAttribute="top" secondItem="Rbs-ZZ-1ys" secondAttribute="top" constant="201" id="4Hv-IM-uZt"/>
+                            <constraint firstItem="2rd-I9-6AJ" firstAttribute="top" secondItem="Rbs-ZZ-1ys" secondAttribute="top" multiplier="1.5" id="4Hv-IM-uZt"/>
+                            <constraint firstItem="f9N-ro-2OU" firstAttribute="centerX" secondItem="Rbs-ZZ-1ys" secondAttribute="centerX" id="L2p-wh-kB6"/>
+                            <constraint firstItem="f9N-ro-2OU" firstAttribute="centerY" secondItem="Rbs-ZZ-1ys" secondAttribute="centerY" id="Mvz-5a-dq4"/>
                             <constraint firstItem="2rd-I9-6AJ" firstAttribute="height" secondItem="Gdn-RL-GfM" secondAttribute="height" multiplier="0.1" id="aVL-Zx-0eO"/>
-                            <constraint firstItem="Rbs-ZZ-1ys" firstAttribute="bottom" secondItem="zwm-f8-3yj" secondAttribute="bottom" constant="206" id="cWG-IT-fAp"/>
+                            <constraint firstItem="Rbs-ZZ-1ys" firstAttribute="bottom" secondItem="zwm-f8-3yj" secondAttribute="bottom" multiplier="1.1" id="cWG-IT-fAp"/>
+                            <constraint firstItem="f9N-ro-2OU" firstAttribute="width" secondItem="Gdn-RL-GfM" secondAttribute="width" id="lKC-DX-Kg2"/>
                             <constraint firstItem="zwm-f8-3yj" firstAttribute="height" secondItem="Gdn-RL-GfM" secondAttribute="height" multiplier="0.1" id="lXH-yV-Ppq"/>
                             <constraint firstItem="zwm-f8-3yj" firstAttribute="leading" secondItem="Rbs-ZZ-1ys" secondAttribute="leading" id="orL-4d-7jf"/>
+                            <constraint firstItem="f9N-ro-2OU" firstAttribute="height" secondItem="Gdn-RL-GfM" secondAttribute="height" multiplier="0.1" id="qxy-UH-sM9"/>
                             <constraint firstItem="2rd-I9-6AJ" firstAttribute="trailing" secondItem="Rbs-ZZ-1ys" secondAttribute="trailing" id="uP1-kC-vdD"/>
                             <constraint firstItem="2rd-I9-6AJ" firstAttribute="leading" secondItem="Rbs-ZZ-1ys" secondAttribute="leading" id="zF9-5S-lgF"/>
                         </constraints>

@@ -24,4 +24,8 @@ class StartViewController: UIViewController, Controller {
         delegate?.navigateToPortal()
     }
     
+    @IBAction func navigateToAirport(_ sender: Any) {
+        delegate?.navigateToAirport()
+    }
+    
 }

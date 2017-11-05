@@ -1,14 +1,14 @@
 //
-//  StartCoordinator.swift
+//  AirportCoordinator.swift
 //  AugmentedAdventures
 //
-//  Created by Christopher Webb-Orenstein on 10/31/17.
+//  Created by Christopher Webb-Orenstein on 11/5/17.
 //  Copyright © 2017 Christopher Webb-Orenstein. All rights reserved.
 //
 
 import UIKit
 
-final class StartControllerCoordinator: ControllerCoordinator {
+final class AirportControllerCoordinator: ControllerCoordinator {
     
     var window: UIWindow
     
@@ -22,9 +22,8 @@ final class StartControllerCoordinator: ControllerCoordinator {
     
     var type: ControllerType {
         didSet {
-            if let storyboard = try? UIStoryboard(.start) {
-                if let viewController: StartViewController = try? storyboard.instantiateViewController() {
-                    viewController.delegate = self 
+            if let storyboard = try? UIStoryboard(.airport) {
+                if let viewController: AirportViewController = try? storyboard.instantiateViewController() {
                     rootController = viewController
                 }
             }
@@ -42,17 +41,3 @@ final class StartControllerCoordinator: ControllerCoordinator {
     }
 }
 
-extension StartControllerCoordinator: StartViewControllerDelegate {
-    
-    func navigateToRemote() {
-        self.delegate?.transitionCoordinator(type: .app)
-    }
-    
-    func navigateToPortal() {
-        delegate?.transitionCoordinator(type: .portal)
-    }
-    
-    func navigateToAirport() {
-        delegate?.transitionCoordinator(type: .airport)
-    }
-}

@@ -10,5 +10,7 @@ import Foundation
 
 protocol StartViewControllerDelegate: class {
     func navigateToRemote()
-    func navigateToPortal() 
+    func navigateToPortal()
+    func navigateToAirport()
 }
+

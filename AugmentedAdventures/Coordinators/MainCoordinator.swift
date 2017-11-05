@@ -60,6 +60,12 @@ extension MainCoordinator: ControllerCoordinatorDelegate {
             portalCoordinator.delegate = self
             portalCoordinator.type = .portal
             portalCoordinator.start()
+        case .airport:
+            let airportCoordinator = AirportControllerCoordinator(window: window)
+            addChildCoordinator(airportCoordinator)
+            airportCoordinator.delegate = self
+            airportCoordinator.type = .airport
+            airportCoordinator.start()
         }
     }
 }
